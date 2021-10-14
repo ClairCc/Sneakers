@@ -5,10 +5,12 @@
   --darkGrayishBlue: #68707d;
   --grayishBlue: #b6bcc8;
   --lightGrayishBlue: #f7f8fd;
+  --imageCarousel: ./src/images/image-product-1.jpg;
 }
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 html {
   font-size: 62.5%;
@@ -44,4 +46,33 @@ header nav ul li {
 }
 .header_iconos figure {
   margin: 0 10px;
+}
+main {
+  margin: 0 -20px;
+}
+main .hero_img {
+  background: url("./src/images/image-product-1.jpg") center center;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero_img figure {
+  background-color: var(--lightGrayishBlue);
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+.hero_img figure img {
+  width: 10px;
+  height: 15px;
+}
+.hero_rigth {
+  transform: rotate(180deg);
 }
