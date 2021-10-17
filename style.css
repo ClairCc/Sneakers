@@ -3,20 +3,22 @@
   --paleOrange: #ffede0;
   --veryVarkBlue: #1d2025;
   --darkGrayishBlue: #68707d;
-  --grayishBlue: #b6bcc8;
+  --grayishBlue: #72757d;
   --lightGrayishBlue: #f7f8fd;
   --imageCarousel: ./src/images/image-product-1.jpg;
+  --orangeTitle: 700;
+  --secondaryOrange: #b95b13;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
 }
 html {
   font-size: 62.5%;
 }
 body {
-  font-size: 1.6rem;
   font-family: "Kumbh Sans", sans-serif;
   margin: 0 20px;
 }
@@ -71,8 +73,99 @@ main .hero_img {
 }
 .hero_img figure img {
   width: 10px;
-  height: 15px;
 }
 .hero_rigth {
   transform: rotate(180deg);
+}
+.details_h3 {
+  font: 700 1.3rem "Kumbh Sans";
+  color: var(--secondaryOrange);
+  text-transform: uppercase;
+  margin: 8px 0;
+}
+.details_title {
+  text-transform: capitalize;
+  margin: 8px 0;
+  font-size: 2.4rem;
+}
+.section_description {
+  color: var(--darkGrayishBlue);
+  font-size: 1.6rem;
+  line-height: 24px;
+}
+.section_price {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price {
+  font: 700 2rem "Kumbh Sans";
+  display: flex;
+  align-items: center;
+}
+.price span {
+  font: 700 1.2rem "Kumbh Sans";
+  color: #dc8847;
+  background-color: var(--paleOrange);
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin: 0 10px;
+}
+.lastPrice {
+  font-size: 1.4rem;
+  text-decoration: line-through;
+  color: var(--grayishBlue);
+}
+.details_form {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: var(--lightGrayishBlue);
+  height: 44px;
+  align-items: center;
+  margin: 16px 0;
+  border-radius: 8px;
+}
+.details_form input {
+  border: none;
+  background-color: transparent;
+  color: var(--orange);
+  align-self: center;
+  height: auto;
+}
+.details_form,
+.details_form input {
+  font: 700 3rem "Kumbh Sans", sans-serif;
+}
+.details_form p {
+  font-size: 1.6rem;
+}
+.add {
+  border: none;
+  background: var(--orange);
+  color: var(--lightGrayishBlue);
+  height: 52px;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 8px;
+  font: 700 1.6rem "Kumbh Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.add span {
+  display: inline-block;
+  background: url("./src/images/icon-cart.svg") center center;
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: brightness(17);
+  margin: 0 14px;
 }
