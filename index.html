@@ -15,65 +15,85 @@
   </head>
   <body>
     <header>
-      <nav>
-        <figure><img src="./src/images/icon-close.svg" alt="menu" /></figure>
-        <ul>
-          <li>Collections</li>
-          <li>Men</li>
-          <li>Women</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-      <figure><img src="./src/images/icon-menu.svg" alt="menu" /></figure>
+      <figure class="header_menu">
+        <img src="./src/images/icon-menu.svg" alt="menu" />
+      </figure>
       <figure class="header_icon">
         <img src="./src/images/logo.svg" alt="Sneakers Icon" />
+        <nav>
+          <figure>
+            <img src="./src/images/icon-close.svg" alt="menu" />
+          </figure>
+          <ul>
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
       </figure>
       <section class="header_iconos">
-        <figure><img src="./src/images/icon-cart.svg" alt="" /></figure>
+        <figure class="carrito">
+          <img src="./src/images/icon-cart.svg" alt="" />
+        </figure>
         <figure><img src="./src/images/image-avatar.png" alt="" /></figure>
       </section>
     </header>
-    <main>
-      <figure class="hero_img">
-        <a href="./" aria-label="left">
-          <figure>
-            <img
-              class="hero_left"
-              src="./src/images/icon-previous.svg"
-              alt=""
-            />
-          </figure>
-        </a>
-        <a href="./" aria-label="rigth">
-          <figure>
-            <img
-              src="./src/images/icon-previous.svg"
-              class="hero_rigth"
-              alt=""
-            />
-          </figure>
-        </a>
-      </figure>
-    </main>
-    <section class="section_details">
-      <h3 class="details_h3">Sneaker Company</h3>
-      <h2 class="details_title">Fall limited edition Sneakers</h2>
-      <p class="section_description">
-        These low-profile sneakers are your perfect casual wear companion.
-        Featuring a durable rubber outer sole, they! withstand everything the
-        weather can offer
-      </p>
-      <article class="section_price">
-        <p class="price">$125.00 <span class="descount">50%</span></p>
-        <p class="lastPrice">$250.00</p>
-      </article>
-      <form action="" class="details_form">
-        <input type="button" value="-" />
-        <p>0</p>
-        <input type="button" value="+" />
-      </form>
-      <button class="add"><span class="add_icon"></span> Add to cart</button>
-    </section>
+    <div class="contenedor">
+      <main>
+        <figure class="hero_img">
+          <a href="./" aria-label="left">
+            <figure>
+              <img
+                class="hero_left"
+                src="./src/images/icon-previous.svg"
+                alt=""
+              />
+            </figure>
+          </a>
+          <a href="./" aria-label="rigth">
+            <figure>
+              <img
+                src="./src/images/icon-previous.svg"
+                class="hero_rigth"
+                alt=""
+              />
+            </figure>
+          </a>
+        </figure>
+        <section class="main_subimg">
+          <article class="subimg1 subimg"></article>
+          <article class="subimg2 subimg"></article>
+          <article class="subimg3 subimg"></article>
+          <article class="subimg4 subimg"></article>
+        </section>
+      </main>
+      <section class="section_details">
+        <h3 class="details_h3">Sneaker Company</h3>
+        <h2 class="details_title">Fall limited edition Sneakers</h2>
+        <p class="section_description">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they! withstand everything the
+          weather can offer
+        </p>
+        <article class="section_price">
+          <p class="price">$125.00 <span class="descount">50%</span></p>
+          <p class="lastPrice">$250.00</p>
+        </article>
+        <article class="price_actions">
+          <form action="" class="details_form">
+            <input type="button" value="-" />
+            <p>0</p>
+            <input type="button" value="+" />
+          </form>
+          <section class="section_add">
+            <button class="add">
+              <span class="add_icon"></span> Add to cart
+            </button>
+          </section>
+        </article>
+      </section>
+    </div>
   </body>
 </html>
