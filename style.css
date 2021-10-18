@@ -248,7 +248,7 @@ main .hero_img {
   }
   .contenedor {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
   }
   main {
@@ -284,6 +284,7 @@ main .hero_img {
     background-repeat: no-repeat;
     border-radius: 12px;
     height: 88px;
+    cursor: pointer;
   }
   .hero_img {
     border-radius: 16px;
@@ -297,6 +298,16 @@ main .hero_img {
   .header_iconos figure ~ figure img:hover {
     border-radius: 100%;
     border: 2px solid var(--orange);
+  }
+  .subimg1 {
+    opacity: 0.5;
+  }
+  .subimg:hover {
+    filter: opacity(0.7);
+  }
+  #left,
+  #rigth {
+    cursor: pointer;
   }
 }
 @media (min-width: 1440px) {

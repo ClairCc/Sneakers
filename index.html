@@ -43,24 +43,21 @@
     <div class="contenedor">
       <main>
         <figure class="hero_img">
-          <a href="./" aria-label="left">
-            <figure>
-              <img
-                class="hero_left"
-                src="./src/images/icon-previous.svg"
-                alt=""
-              />
-            </figure>
-          </a>
-          <a href="./" aria-label="rigth">
-            <figure>
-              <img
-                src="./src/images/icon-previous.svg"
-                class="hero_rigth"
-                alt=""
-              />
-            </figure>
-          </a>
+          <figure id="left" onclick="contadorLeft()">
+            <img
+              class="hero_left"
+              src="./src/images/icon-previous.svg"
+              alt=""
+            />
+          </figure>
+
+          <figure id="rigth" onclick="contadorRigth()">
+            <img
+              src="./src/images/icon-previous.svg"
+              class="hero_rigth"
+              alt=""
+            />
+          </figure>
         </figure>
         <section class="main_subimg">
           <article class="subimg1 subimg"></article>
@@ -95,5 +92,6 @@
         </article>
       </section>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
